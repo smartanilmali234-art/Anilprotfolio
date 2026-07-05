@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import GlowButton from "./ui/GlowButton";
 import Magnetic from "./ui/Magnetic";
+import { SOCIAL_LINKS } from "@/config/social";
 
 const ROLES = [
   "Machine Learning Engineer",
@@ -164,22 +165,27 @@ export default function HeroPremium() {
             {[
               {
                 icon: <Github className="h-5 w-5" />,
-                href: "https://github.com/smartanilmali234-art",
+                href: SOCIAL_LINKS.github,
                 label: "GitHub"
               },
               {
+                icon: <Github className="h-5 w-5" />,
+                href: SOCIAL_LINKS.portfolioRepo,
+                label: "Portfolio Repo"
+              },
+              {
                 icon: <Linkedin className="h-5 w-5" />,
-                href: "https://www.linkedin.com/in/anil-mali-71202727b",
+                href: SOCIAL_LINKS.linkedin,
                 label: "LinkedIn"
               },
               {
                 icon: <Code2 className="h-5 w-5" />,
-                href: "https://leetcode.com/u/smartanilmali234-art",
+                href: SOCIAL_LINKS.leetcode,
                 label: "LeetCode"
               },
               {
                 icon: <Mail className="h-5 w-5" />,
-                href: "mailto:smartanilmali234@gmail.com",
+                href: SOCIAL_LINKS.email,
                 label: "Email"
               }
             ].map((social) => (

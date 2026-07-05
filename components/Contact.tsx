@@ -3,6 +3,7 @@
 import Card from "./ui/Card";
 import GlowButton from "./ui/GlowButton";
 import { Mail, MapPin, Send, Github, Linkedin, Code2, Phone, Globe, ArrowUpRight } from "lucide-react";
+import { SOCIAL_LINKS } from "@/config/social";
 
 export default function Contact() {
   return (
@@ -47,13 +48,14 @@ export default function Contact() {
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-textMuted">Profiles</p>
             <div className="flex flex-wrap gap-3">
               {[
-                { href: "https://github.com/smartanilmali234-art", label: "GitHub", icon: <Github className="h-4 w-4" /> },
-                { href: "https://www.linkedin.com/in/anil-mali-71202727b", label: "LinkedIn", icon: <Linkedin className="h-4 w-4" /> },
-                { href: "https://leetcode.com/u/smartanilmali234-art", label: "LeetCode", icon: <Code2 className="h-4 w-4" /> },
-                { href: "https://www.kaggle.com", label: "Kaggle", icon: <Globe className="h-4 w-4" /> },
-                { href: "https://medium.com", label: "Medium", icon: <Globe className="h-4 w-4" /> },
-                { href: "https://x.com", label: "X", icon: <Globe className="h-4 w-4" /> },
-                { href: "https://www.researchgate.net", label: "ResearchGate", icon: <Globe className="h-4 w-4" /> }
+                { href: SOCIAL_LINKS.github, label: "GitHub", icon: <Github className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.portfolioRepo, label: "Portfolio Repo", icon: <Github className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.linkedin, label: "LinkedIn", icon: <Linkedin className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.leetcode, label: "LeetCode", icon: <Code2 className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.kaggle, label: "Kaggle", icon: <Globe className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.medium, label: "Medium", icon: <Globe className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.x, label: "X", icon: <Globe className="h-4 w-4" /> },
+                { href: SOCIAL_LINKS.researchGate, label: "ResearchGate", icon: <Globe className="h-4 w-4" /> }
               ].map((item) => (
                 <a
                   key={item.label}

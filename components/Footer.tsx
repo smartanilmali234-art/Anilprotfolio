@@ -2,12 +2,14 @@
 
 import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 import Magnetic from "./ui/Magnetic";
+import { SOCIAL_LINKS } from "@/config/social";
 
 const LINKS = [
-  { href: "https://github.com/smartanilmali234-art", label: "GitHub", icon: <Github className="h-4 w-4" /> },
-  { href: "https://www.linkedin.com/in/anil-mali-71202727b", label: "LinkedIn", icon: <Linkedin className="h-4 w-4" /> },
-  { href: "https://leetcode.com/u/smartanilmali234-art", label: "LeetCode", icon: <Code2 className="h-4 w-4" /> },
-  { href: "mailto:smartanilmali234@gmail.com", label: "Email", icon: <Mail className="h-4 w-4" /> }
+  { href: SOCIAL_LINKS.github, label: "GitHub", icon: <Github className="h-4 w-4" /> },
+  { href: SOCIAL_LINKS.portfolioRepo, label: "Portfolio Repo", icon: <Github className="h-4 w-4" /> },
+  { href: SOCIAL_LINKS.linkedin, label: "LinkedIn", icon: <Linkedin className="h-4 w-4" /> },
+  { href: SOCIAL_LINKS.leetcode, label: "LeetCode", icon: <Code2 className="h-4 w-4" /> },
+  { href: SOCIAL_LINKS.email, label: "Email", icon: <Mail className="h-4 w-4" /> }
 ];
 
 export default function Footer() {

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, FileText, Sparkles, Mail, Code2 } from "lucide-react";
 import GlowButton from "./ui/GlowButton";
 import Magnetic from "./ui/Magnetic";
+import { SOCIAL_LINKS } from "@/config/social";
 
 export default function Hero() {
   return (
@@ -78,10 +79,11 @@ export default function Hero() {
             className="flex items-center gap-4 pt-6"
           >
             {[
-              { icon: <Github className="h-5 w-5" />, href: "https://github.com/smartanilmali234-art", label: "GitHub" },
-              { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/anil-mali-71202727b", label: "LinkedIn" },
-              { icon: <Code2 className="h-5 w-5" />, href: "https://leetcode.com/u/smartanilmali234-art", label: "LeetCode" },
-              { icon: <Mail className="h-5 w-5" />, href: "mailto:smartanilmali234@gmail.com", label: "Email" }
+              { icon: <Github className="h-5 w-5" />, href: SOCIAL_LINKS.github, label: "GitHub" },
+              { icon: <Github className="h-5 w-5" />, href: SOCIAL_LINKS.portfolioRepo, label: "Portfolio Repo" },
+              { icon: <Linkedin className="h-5 w-5" />, href: SOCIAL_LINKS.linkedin, label: "LinkedIn" },
+              { icon: <Code2 className="h-5 w-5" />, href: SOCIAL_LINKS.leetcode, label: "LeetCode" },
+              { icon: <Mail className="h-5 w-5" />, href: SOCIAL_LINKS.email, label: "Email" }
             ].map((social, idx) => (
               <Magnetic key={idx}>
                 <a
