@@ -7,7 +7,7 @@ export const SEO = {
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/profile-circle.png", width: 1024, height: 1024 }],
     locale: SITE_CONFIG.locale,
     type: "website" as const
   },
@@ -17,4 +17,3 @@ export const SEO = {
     description: SITE_CONFIG.description
   }
 };
-

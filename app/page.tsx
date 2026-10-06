@@ -1,7 +1,6 @@
 ﻿"use client";
 
 import Navbar from "@/components/Navbar";
-import LoadingScreen from "@/components/LoadingScreen";
 import HeroPremium from "@/components/HeroPremium";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -20,7 +19,6 @@ import ChatAssistant from "@/components/ChatAssistant";
 export default function Home() {
   return (
     <>
-      <LoadingScreen />
       <Navbar />
       <div className="space-y-28 pb-24">
         <HeroPremium />
